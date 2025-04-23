@@ -1,0 +1,71 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Validasi Password</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    input, button {
+      padding: 8px;
+      margin: 5px 0;
+    }
+    #output {
+      margin-top: 10px;
+      font-size: 18px;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Masukkan Password:</h2>
+  <input type="text" id="passwordInput" placeholder="Tulis password di sini">
+  <br>
+  <button onclick="cekPassword()">Cek Password</button>
+
+  <div id="output"></div>
+
+  <script>
+    function cekPassword() {
+      let password = document.getElementById("passwordInput").value;
+      let output = document.getElementById("output");
+
+      if (password.length >= 6) {
+        if (password.indexOf(" ") === -1) {
+          output.innerHTML = "<h3>Password valid ✅</h3>";
+          output.style.color = "green";
+        } else {
+          output.innerHTML = "<h3>Password tidak boleh ada spasi ❌</h3>";
+          output.style.color = "red";
+        }
+      } else {
+        output.innerHTML = "<h3>Password minimal 6 karakter ❌</h3>";
+        output.style.color = "red";
+      }
+    }
+  </script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>latihan</title>
+</head>
+<body>
+  <div id="output"></div>
+
+  <script>
+    let umur = prompt("masukkan usia : ")
+    let status = prompt("masukkan status : ")
+
+    
+  </script>
+</body>
+</html>

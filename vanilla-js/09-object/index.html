@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let Mahasiswa = {
+            nama : prompt("Masukkan nama anda : "),
+            nim : prompt("Masukkan Nim anda : "),
+            prodi : prompt("Masukkan Prodi anda : "),
+            angkatan : prompt("Masukkan angkatan anda: ")
+        };
+
+        document.write(`Data Mahasiswa <br>`);
+        for (let key in Mahasiswa){
+            document.write(`${key} : ${Mahasiswa[key]} <br>`);
+        }
+    </script>
+</body>
+</html>
