@@ -21,7 +21,7 @@
 
 		for (let img of imagess) { // diambil satu2 karena ada beberapa img
 			// console.dir(img);
-			img.src = "https://th.bing.com/th/id/OIP.dSB-o26TpTlU0MGqV5A14QHaG_?w=160&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+			img.src = "https://th.bing.com/th/id/OIP.3HskVlGxy_eOOFFGiPXa9wHaJ9?w=156&h=182&c=7&r=0&o=5&dpr=1.1&pid=1.7"
 		}
 
 	
@@ -202,6 +202,19 @@
 		console.log(h2);
 		const hSatu = document.querySelector('h1')
 		hSatu.insertAdjacentElement('afterend', h2)   // h2 Dimasukkan setelah h1
+
+
+	
+// Removechild() dan remove()
+	// Removechild (cara lama dan sedikit ribet)
+		const firstLi = document.querySelector('li');
+		firstLi.parentElement.removeChild(firstLi);  // Harus dicari dulu parentnya kalo mau menghapus child nya
+
+	
+	// Remove (cara modern dan lebih mudah)
+		const firstImg = document.querySelector('img');
+		firstImg.remove();  // Bisa hapus langsung dari element tersebut
+
 	
 	
 	
